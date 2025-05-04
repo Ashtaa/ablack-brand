@@ -1,0 +1,53 @@
+/* Container styling for the featured products section */
+.featured-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+   
+    background-color: #242222;
+
+  }
+  .name{
+    font-weight: 700;
+  }
+  /* Individual product styling */
+  .Product {
+    width: 200px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect on product cards */
+  .Product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Product image styling */
+  .Product img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* Product text styling */
+  .Product p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Responsive styling for smaller screens */
+  @media (max-width: 600px) {
+    .Product {
+      width: 100%;
+    }
+  }
+  

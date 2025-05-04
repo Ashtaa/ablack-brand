@@ -1,0 +1,20 @@
+.new-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #242222;
+    margin: 0;
+  }
+  .addto-cart{
+    background-color: black;
+    color: wheat;
+    border-radius: 10px;
+    padding: 10px;
+    
+  }
+  .addto-cart:hover{
+    cursor: grab;
+    color: blue;
+  }

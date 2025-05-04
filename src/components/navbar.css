@@ -1,0 +1,101 @@
+/* Main container for the Navbar */
+.nav-container {
+    display: flex;
+    justify-content: space-between; /* Space between sections */
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+    position: sticky; /* Stick to the top */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Logout Button on the Far Left */
+  .nav-left {
+    position: absolute; /* Position it at the edge */
+    left: 10px; /* Ensure it's close to the left edge */
+    top: 50%; /* Center vertically within the navbar */
+    transform: translateY(-50%);
+  }
+  
+  button {
+    background-color: #ff4b5c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #ff1c3b;
+    transform: scale(1.05);
+  }
+  
+  /* Center Navigation Links */
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1; /* Allow links to take up the middle space */
+    gap: 20px; /* Add spacing between links */
+  }
+  
+  .nav-container a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-container a:hover {
+    color: #ff9800;
+  }
+  
+  /* Cart Icon on the Far Right */
+  .nav-right {
+    position: absolute; /* Position it at the edge */
+    right: 20px; /* Ensure it's close to the right edge */
+    top: 50%; /* Center vertically within the navbar */
+    transform: translateY(-50%);
+  }
+  
+  .cart-icon {
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .cart-icon:hover {
+    color: #ff9800;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-container {
+      background-color: black;
+      flex-direction: row; /* Stack items vertically */
+      align-items: flex-start;
+      padding: 15px;
+    }
+  
+    .nav-left,
+    .nav-right {
+      position: static; /* Reset positioning for smaller screens */
+      transform: none;
+      margin-bottom: 10px;
+    }
+  
+    .nav-links {
+      flex-direction: row; /* Stack links vertically */
+      gap: 10px;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  

@@ -1,0 +1,120 @@
+/* Main cart container */
+.cart-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Title styling */
+  .cart-container h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Empty cart message */
+  .cart-container p {
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+  }
+  
+  /* Individual item container */
+  .cart-container > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Separator line */
+  }
+  
+  /* Item name and price styling */
+  .cart-container h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .cart-container p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #444;
+  }
+  
+  /* Input for quantity */
+  .cart-container input {
+    width: 50px;
+    text-align: center;
+    margin: 0 10px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Buttons for increment and decrement */
+  .add, .minus {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    color: white;
+    background-color: #007bff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .minus:hover {
+    background-color: #0056b3; /* Same style for hover */
+  }
+  
+  /* Remove button styling */
+  .cart-container button[style*="background: red"] {
+    margin-top: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cart-container button[style*="background: red"]:hover {
+    background-color: darkred; /* Darker red on hover */
+  }
+  
+  /* Total and clear button */
+  .cart-container h3:last-of-type {
+    text-align: right;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  .cart-container button:last-of-type {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #ff9800; /* Orange color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cart-container button:last-of-type:hover {
+    background-color: #e68900; /* Darker orange */
+  }
+  

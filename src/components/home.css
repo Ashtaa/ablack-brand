@@ -1,0 +1,60 @@
+.home-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.scrolling-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: max-content;
+  height: 100%;
+  animation: scroll 40s linear infinite;
+  z-index: 0;
+}
+
+.scroll-img {
+  width: 400px;         /* Fixed image width like a gallery */
+  height: 100vh;        /* Full screen height */
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Make text background full screen and center text */
+.home-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(1, 2, 3, 0.6); /* Full screen dark overlay */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+.home-container h1 {
+  font-size: 100px;
+  color: transparent; /* Make the inside color transparent */
+  text-align: center;
+  font-weight: bold;
+  -webkit-text-stroke: 1px rgb(255, 255, 255); 
+}
+
+.home-container h2{
+  font-size: 50px;
+}

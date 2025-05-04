@@ -1,0 +1,46 @@
+/* General styles for the navigation bar */
+.product-container {
+    display: flex; /* Use Flexbox for alignment */
+    justify-content: center; /* Center the links */
+    background-color: #f4f4f4; /* Light background for the navbar */
+    padding: 10px 20px; /* Add spacing */
+    border-bottom: 2px solid #ddd; /* Add a subtle bottom border */
+   /* Space below the navbar */
+  }
+  .input{
+    border-radius: 10px;
+    background-color: rgb(41, 40, 40);
+    color: #ddd;
+    border:rgb(41, 40, 40) ;
+  }
+  /* Styling for navigation links */
+ .product-container a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Dark text color */
+    font-size: 18px; /* Font size */
+    margin: 0 15px; /* Space between links */
+    padding: 5px 10px; /* Add padding for a clickable area */
+    border-radius: 5px; /* Rounded edges for hover effect */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover transitions */
+  }
+  
+  /* Hover effect for navigation links */
+  .product-container a:hover {
+    background-color: #007bff; /* Blue background on hover */
+    color: white; /* White text on hover */
+  }
+  
+  /* Active link styling (if using custom styles for active links) */
+  .product-container a.active {
+    background-color: #007bff; /* Blue background for active links */
+    color: white; /* White text */
+    font-weight: bold; /* Emphasize active link */
+  }
+  
+  /* Styles for the content rendered in <Outlet> */
+  .outlet-container {
+    padding: 20px; /* Add spacing for the outlet content */
+    font-family: Arial, sans-serif; /* Use a clean font */
+    color: #333; /* Text color */
+  }
+  

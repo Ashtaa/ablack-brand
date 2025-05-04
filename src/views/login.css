@@ -1,0 +1,138 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* Center the form container and its contents */
+  .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full height of the viewport */
+    padding: 20px;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+  }
+  
+  /* Login Page Styles */
+  .login-page {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center; /* Center text content */
+  }
+  
+  /* Header Styles */
+  h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Login type buttons */
+  .login-type {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 48%; /* Two buttons side by side */
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .selected {
+    background-color: #0056b3;
+  }
+  
+  /* Form Styles */
+  .add-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-control {
+    margin-bottom: 15px;
+    text-align: left; /* Align labels and inputs to the left */
+  }
+  
+  .form-control label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .form-control input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 14px;
+  }
+  
+  /* Active Button */
+  .btn-block {
+    margin-top: 10px;
+    width: 100%; /* Full width button */
+  }
+  
+  /* Error Styles */
+  .error {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  /* Forgot Password Styles */
+  .forgot-password {
+    margin-top: 10px;
+    text-align: center;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .login-page {
+      padding: 20px;
+    }
+  
+    .btn {
+      width: 100%; /* Full width buttons for smaller screens */
+    }
+  
+    .login-type {
+      flex-direction: column; /* Stack buttons vertically */
+      gap: 10px;
+    }
+  }
+  
